@@ -1142,6 +1142,8 @@ def create_parser():
         '--selenium-browner-no-headless', dest='selenium_browner_headless', action='store_false')
     downloader.add_option(
         '--selenium-browner-headless', dest='selenium_browner_headless', action='store_true')
+    downloader.add_option(
+        '--m3u8-fake-header', dest='m3u8_fake_header', action='store_true')
 
     workarounds = optparse.OptionGroup(parser, 'Workarounds')
     workarounds.add_option(
